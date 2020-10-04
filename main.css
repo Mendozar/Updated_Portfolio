@@ -1,0 +1,109 @@
+/**/
+* {
+    box-sizing: border-box;
+  }
+
+.floatright {
+    float:right;
+}
+
+#aboutDiv {
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+div.carousel-caption.d-none.d-md-block {
+    background-color: #007bff;
+    opacity: 75%;
+}
+
+div.carousel-caption.d-none.d-md-block:hover {
+    background-color: #007bff;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.mb-auto, .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+    background-image: url("assets/sayagata-400px.png");
+    background-repeat: repeat;
+  }
+
+h1 {
+    color: #007bff;
+}
+
+
+.container {
+    background-color: #FFFFFF;
+    float: center;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+.footer, span {
+    text-align: center;
+}
+
+  
+
+/* Max width > 768 px - Left align the container. Right align the nav bar page options.
+@media screen and (min-width: 768px) {
+    .container {
+        float: left;
+    }
+    img {
+        size: auto;
+    }
+
+    p, h1 {
+        text-align: left !important;
+    }
+    
+    }
+*/
+
+/* Max width > 640 px but < 768 px - Container should fill the width with some padding.*/
+
+@media screen and (max-width: 768px) {
+.container {
+    background-color: #FFFFFF;
+    float: left;
+}
+img {
+    size: auto;
+}
+p, h1 {
+    text-align: center;
+}
+}
+
+/* Max width < 640 px - Stack the name on top of the buttons in the nav bar. 
+Center align the name and nav bar buttons. 
+Portfolio should have 1 column for the container and center the caption text. 
+Index page should have the profile image fill the max width.*/
+
+@media screen and (max-width: 640px) {
+    nav.navbar-dark {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p, h1 {
+        text-align: center;
+    }
+
+}
